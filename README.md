@@ -29,6 +29,7 @@
 • java -jar aqa-shop.jar -P:jdbc.url=jdbc:mysql://localhost:3306/mysql -P:jdbc.user=app -P:jdbc.password=pass (для работы с базой MYSQL)
 
 • java -jar aqa-shop.jar -P:jdbc.url=jdbc:postgresql://localhost:5432/postgresql -P:jdbc.user=app -P:jdbc.password=pass (для работы с базой Postgresql)
+
 7) В терминале ожидаем сообщения JVM Running, означающее, что приложение успешно запустилось
 8) Производим запуск автотестов в терминале с помощью команды: ./gradlew clean test
 9) По завершении тестов, используя Allure сформировать отчёт. Для этого в терминале применить команду: ./gradlew allureserve
