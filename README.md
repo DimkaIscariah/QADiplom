@@ -25,8 +25,10 @@
 4) Используя Dockerfile запустить gate-simulator
 5) Перед запуском приложения важно проверить, что в файлах build.gradle и application.properties активна необходимая база данных, другая соответственно должна быть неактивна. То есть, при работе с MYSQL необходимо закомментить базу Postgresql и наоборот.
 6) Запускаем приложение в терминале при помощи команды:
-   • java -jar aqa-shop.jar -P:jdbc.url=jdbc:mysql://localhost:3306/mysql -P:jdbc.user=app -P:jdbc.password=pass (для работы с базой MYSQL)
-   • java -jar aqa-shop.jar -P:jdbc.url=jdbc:postgresql://localhost:5432/postgresql -P:jdbc.user=app -P:jdbc.password=pass (для работы с базой Postgresql)
+
+• java -jar aqa-shop.jar -P:jdbc.url=jdbc:mysql://localhost:3306/mysql -P:jdbc.user=app -P:jdbc.password=pass (для работы с базой MYSQL)
+
+• java -jar aqa-shop.jar -P:jdbc.url=jdbc:postgresql://localhost:5432/postgresql -P:jdbc.user=app -P:jdbc.password=pass (для работы с базой Postgresql)
 7) В терминале ожидаем сообщения JVM Running, означающее, что приложение успешно запустилось
 8) Производим запуск автотестов в терминале с помощью команды: ./gradlew clean test
 9) По завершении тестов, используя Allure сформировать отчёт. Для этого в терминале применить команду: ./gradlew allureserve
