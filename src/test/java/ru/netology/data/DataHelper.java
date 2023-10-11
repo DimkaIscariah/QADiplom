@@ -77,7 +77,7 @@ public class DataHelper {
     public static String getInvalidOwner() {
         Random random = new Random();
         String [] name = new String [] {"Elena", "Rita", "81542", "Soul", "!Kolya!", "Джоуи-Фрэнсис"};
-        return name[random.nextInt(8)];
+        return name[random.nextInt(6)];
     }
 
     public static String getValidCode() {
